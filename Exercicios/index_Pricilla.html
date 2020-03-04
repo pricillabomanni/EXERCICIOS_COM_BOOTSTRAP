@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  
+
+</head>
+
+<body>
+  <main class="container">
+
+    <nav class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href=index_Pricilla.html class="navbar-link">Introdução ao Javascript</a></li>
+        <li><a href="#" class="navbar-link">Lógica simples com JS</a></li>
+        <li><a href="#" class="navbar-link">Lógica complexa com JS</a></li>
+      </ul>
+    </nav>
+
+
+    <section class="jumbotron">
+      <h2>JAVASCRIPT</h2>
+      <p>Linguagem de programação de front end que define comportamentos para os elementos da estrutura das páginas web.
+        Pode-se criar e manipular os elementos, alterando seus atributos ou seu conteúdo.</p>
+      <p><a class="btn btn-primary btn-lg" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+          target="_blank">Veja mais no MDN &raquo;</a></p>
+    </section>
+
+    <section class="container-fluid">
+
+      <h3 id="titulo">Conhecendo o básico da linguagem</h3>
+
+      <p>
+        <button class="btn btn-primary" onclick="funcaoAlert()">Alert</button>
+        <button class="btn btn-primary" onclick="funcaoConfirm()"">Confirm</button>
+        <button class=" btn btn-primary" onclick="funcaoPrompt()">PROMPT</button>
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, amet porro pariatur suscipit debitis, aliquid
+        adipisci quod molestiae, harum dolore tempore hic sunt eos iste consequuntur fugit sequi sed! Optio.</p>
+
+      <p>
+        <script>
+          //comentário js
+          document.write('Este texto foi inserido através do javascript.');
+
+          //criar variável para guardar o texto de um elemento:
+          var titulo = document.getElementById('titulo').textContent;
+          console.log('O texto que está no elemento selecionado pelo id é: ' + titulo);
+        </script>
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptatibus odit, nihil dicta dignissimos id
+        rem quisquam ab iste vel omnis sint tempora voluptatem unde debitis dolor facilis adipisci reiciendis.
+      </p>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore obcaecati amet r  repellendus. Sit, eligendi
+        deleniti voluptatum sed velit quidem quam voluptatem, perspiciatis eius ex accusamus molestias laboriosam sequi
+        tempora libero?
+      </p>
+
+      <hr>
+      <p style="font-weight: bolder;">Texto a ser trocado pelo script</p>
+
+      <p> <small>Clique no botão para trocar o nome:</small>
+
+        <button id="botaotroca" class="btn btn-outline-primary" onclick="trocarNome()">Olá, Maria, como vai?</button>
+      </p>
+      <hr>
+
+      <p>
+        <small>Clique para criar parágrafos: </small>
+        <button class="btn btn-default" id="botaocria" onclick="funcaoCriaTextArea()"> Clique</button>
+        <div id="elementoPai"></div>
+      </p>
+         <p>Os novos parágrafos virão aqui:</p>         
+      <hr>
+
+
+
+
+
+
+    </section>
+
+
+
+
+  </main>
+
+
+  <script src="../Exercicios/js/JS_index_Pricilla.js"></script>
+</body>
+
+</html>
